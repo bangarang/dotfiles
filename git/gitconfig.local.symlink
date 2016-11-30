@@ -1,0 +1,5 @@
+[user]
+        name = Alex Rock
+        email = hi@lxrck.com
+[credential]
+        helper = osxkeychain

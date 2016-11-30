@@ -1,4 +1,5 @@
 # shortcut to this dotfiles path is $ZSH
+
 export ZSH=~/.dotfiles
 export OHZSH=~/.oh-my-zsh
 
@@ -9,7 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
 source ~/.rvm/scripts/rvm
-rvm use default
+# rvm use default
 
 ZSH_THEME="random"
 plugins=(git virtualenv brew)

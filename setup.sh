@@ -215,6 +215,10 @@ if ! rvm -v &> /dev/null; then
   curl -L https://get.rvm.io | bash -s stable --ruby
 fi
 
+
+# Install Day One 2 CLI  
+# sudo /Applications/Day\ One.app/Contents/Resources/install_cli.sh
+
 # make .nvm directory
 # mkdir ~/.nvm
 

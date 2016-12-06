@@ -3,7 +3,7 @@
 export ZSH=~/.dotfiles
 export OHZSH=~/.oh-my-zsh
 
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:$ZSH/bin:/sbin
 export PATH
 
 export NVM_DIR="$HOME/.nvm"

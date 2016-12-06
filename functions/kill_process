@@ -1,0 +1,28 @@
+#!/bin/sh
+# 
+#
+PORT=$1
+
+
+if [ -z "$1" ]
+  then
+    echo "No argument supplied\n"
+    return
+fi
+
+if ! [[ "$PORT" =~ ^[0-9]+$ ]] ;
+then
+  # printf "error: '$PORT' is not a number.\n\nUsage killport <port number>\n"
+  return
+fi
+
+PID=$(lsof -ti:$PORT)
+# 
+if ! [[ "$PID" =~ ^[0-9]+$ ]] ;
+then
+  printf "no proccess found, nothing to kill.\n"
+  return
+fi
+
+printf "killing process $PID running on $PORT\n"
+kill -9 $PID
